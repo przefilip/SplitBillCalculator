@@ -1,0 +1,176 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading-container {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .star-icon {
+    margin-top: 36px; /* Adjust as needed if the image has extra space */
+    height: auto; /* Adjust based on actual size of the star icon */
+  }
+  
+  .main-heading {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 48px; /* Adjust as needed */
+    letter-spacing: -0.01em; /* This is -1% of letter-spacing */
+    color: #060606;
+    margin-top: 36px;
+  }
+  
+  .sub-heading {
+    font-weight: 400;
+    font-size: 18px; /* Adjust as needed */
+    line-height: 24px;
+    letter-spacing: -0.003em; /* This is -0.3% of letter-spacing */
+    color: #282828;
+    margin-top: 18px;
+  }
+  
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #E0E1E1;
+    margin-top: 48px;
+  }
+
+  .divider2 {
+    border: none;
+    width: 50%;
+    height: 1px;
+    background-color: #E0E1E1;
+    margin-top: 48px;
+  }
+
+.divider3 {
+    border: none;
+    width: 30%;
+    height: 1px;
+    background-color: #E0E1E1;
+    margin-top: 48px;
+  }
+  /* Existing CSS above */
+
+.divider {
+    margin-bottom: 72px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px; /* Space between input and tip slider */
+    row-gap: 10px;
+    gap: 24px;
+
+  }
+  
+  .input-group {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    column-gap: 10px;
+
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: #282828;
+    column-gap: 10px;
+    margin-bottom: 10px; /* Space above the input */
+
+  }
+  
+  .input-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E1E1;
+    border-radius: 6px;
+  }
+  
+  .input-icon span, .input-icon img {
+    padding-left: 10px; /* Icon inside input */
+    color: #282828; /* For the dollar sign */
+  }
+  
+  .input-icon input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex-grow: 1; /* Make input take available space */
+  }
+  
+  /* You can add the following to ensure inputs line up with text from above */
+
+  .output-section{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282828;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #amountPerPerson{
+    padding: 10px;
+    margin-left: 9px;
+    background-color: #1A78F2;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    border-radius: 3px;
+    border: solid 2px  #1A78F2;
+    font-size: 24px;
+  }
+
+  /* Existing CSS above */
+
+.features-section {
+    display: flex;
+    justify-content: center;
+    gap: 24px; /* Adjust the gap between cards as necessary */
+    margin-top: 36px; /* Space from the divider */
+  }
+  
+  .feature-card {
+    border: 1px solid #E0E1E1;
+    border-radius: 3px;
+    padding: 16px 24px; /* Adjust padding as necessary */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    
+  }
+  
+  .feature-card img {
+    height: 24px; /* Adjust based on the size of your icons */
+    width: auto;
+  }
+  
+  .feature-card span {
+    color: #282828;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    color: #282828;
+    font-weight: 600; /* Semi-bold as before */
+    font-size: 14px; /* As specified for feature text */
+  }
+  
+  /* Ensure the icons have the correct path in the src attribute */
+  
+  
+  /* Ensure the smile.svg icon is the correct color, if it's not, you might need to edit the SVG file directly */
+  
+  /* Additional styles for tip section and output section */
+  
+  

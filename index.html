@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Lexend:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Split Bill Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <div class="heading-container">
+      <img src="star5.svg" alt="Star" class="star-icon">
+      <h1 class="main-heading">Split Bill Calculator</h1>
+      <p class="sub-heading">Eating in restaurant? Paying bills? Paying for trip? <br> We got you!</p>
+      <hr class="divider2">
+    </div>
+
+    <div class="input-section">
+      <div class="input-group">
+        <label for="billAmount">Your bill</label>
+        <div class="input-icon">
+          <span>$</span>
+          <input type="number" id="billAmount" placeholder="0.00">
+        </div>
+      </div>
+    
+      <div class="input-group">
+        <label for="peopleCount">Peoples to split</label>
+        <div class="input-icon">
+          <img src="smile.svg" alt="People">
+          <input type="number" id="peopleCount" min="1" placeholder="0">
+        </div>
+      </div>
+    </div>
+    
+      
+<hr class="divider3">
+    <div class="output-section">
+      <label for="amountPerPerson">Each person should pay</label>
+      <input type="text" id="amountPerPerson" readonly value="$ 0.00">
+    </div>
+<hr class="divider3">
+    <!-- Additional content will go here -->
+
+
+<!-- Existing HTML above -->
+
+<hr class="divider2" />
+
+<div class="features-section">
+  <div class="feature-card">
+    <img src="MapIcon.svg" alt="Easy to use">
+    <span>Easy to use</span>
+  </div>
+  <div class="feature-card">
+    <img src="CheckIcon.svg" alt="100% Free">
+    <span>100% Free</span>
+  </div>
+  <div class="feature-card">
+    <img src="ZapIcon.svg" alt="Fastest">
+    <span>Fastest</span>
+  </div>
+</div>
+
+<!-- Additional content will go here -->
+
+<script src="script.js"></script>
+</body>
+</html>
