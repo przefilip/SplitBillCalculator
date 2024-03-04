@@ -1,115 +1,89 @@
 body, h1, p {
     margin: 0;
     padding: 0;
-  }
-  
-  .heading-container {
+}
+
+.heading-container {
     text-align: center;
     font-family: 'Inter', sans-serif;
-  }
-  
-  .star-icon {
+}
+
+.star-icon {
     margin-top: 36px; /* Adjust as needed if the image has extra space */
     height: auto; /* Adjust based on actual size of the star icon */
-  }
-  
-  .main-heading {
+}
+
+.main-heading {
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
     font-size: 48px; /* Adjust as needed */
     letter-spacing: -0.01em; /* This is -1% of letter-spacing */
     color: #060606;
     margin-top: 36px;
-  }
-  
-  .sub-heading {
+}
+
+.sub-heading {
     font-weight: 400;
     font-size: 18px; /* Adjust as needed */
     line-height: 24px;
     letter-spacing: -0.003em; /* This is -0.3% of letter-spacing */
     color: #282828;
     margin-top: 18px;
-  }
-  
-  .divider {
+}
+
+.divider, .divider2, .divider3 {
     border: none;
     height: 1px;
     background-color: #E0E1E1;
     margin-top: 48px;
-  }
+    margin-bottom: 72px; /* Adjust margin-bottom for all dividers */
+}
 
-  .divider2 {
-    border: none;
-    width: 50%;
-    height: 1px;
-    background-color: #E0E1E1;
-    margin-top: 48px;
-  }
-
-.divider3 {
-    border: none;
-    width: 30%;
-    height: 1px;
-    background-color: #E0E1E1;
-    margin-top: 48px;
-  }
-  /* Existing CSS above */
-
-.divider {
-    margin-bottom: 72px;
-  }
-  
-  .input-section {
+.input-section {
     display: flex;
     justify-content: center;
-    margin-top: 52px; /* Space between input and tip slider */
+    margin-top: 52px;
     row-gap: 10px;
     gap: 24px;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
 
-  }
-  
-  .input-group {
+.input-group {
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     font-weight: bold;
     justify-content: center;
     column-gap: 10px;
+}
 
-  }
-  
-  .input-group label {
+.input-group label {
     font-size: 14px;
     font-weight: bold;
-    font-family: 'Inter', sans-serif;
     color: #282828;
-    column-gap: 10px;
-    margin-bottom: 10px; /* Space above the input */
+    margin-bottom: 10px;
+}
 
-  }
-  
-  .input-icon {
+.input-icon {
     display: flex;
     align-items: center;
     border: 1px solid #E0E1E1;
     border-radius: 6px;
-  }
-  
-  .input-icon span, .input-icon img {
-    padding-left: 10px; /* Icon inside input */
-    color: #282828; /* For the dollar sign */
-  }
-  
-  .input-icon input {
+}
+
+.input-icon span, .input-icon img {
+    padding-left: 10px;
+    color: #282828;
+}
+
+.input-icon input {
     border: none;
     outline: none;
     padding: 10px;
-    flex-grow: 1; /* Make input take available space */
-  }
-  
-  /* You can add the following to ensure inputs line up with text from above */
+    flex-grow: 1;
+}
 
-  .output-section{
+.output-section {
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -118,59 +92,71 @@ body, h1, p {
     font-size: 24px;
     font-weight: normal;
     font-family: 'Inter', sans-serif;
-  }
+}
 
-  #amountPerPerson{
+#amountPerPerson {
     padding: 10px;
     margin-left: 9px;
     background-color: #1A78F2;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
     color: white;
     border-radius: 3px;
-    border: solid 2px  #1A78F2;
+    border: solid 2px #1A78F2;
     font-size: 24px;
-  }
-
-  /* Existing CSS above */
+}
 
 .features-section {
     display: flex;
     justify-content: center;
-    gap: 24px; /* Adjust the gap between cards as necessary */
-    margin-top: 36px; /* Space from the divider */
-  }
-  
-  .feature-card {
+    gap: 24px;
+    margin-top: 36px;
+    flex-wrap: wrap; /* Allow features to wrap on small screens */
+}
+
+.feature-card {
     border: 1px solid #E0E1E1;
     border-radius: 3px;
-    padding: 16px 24px; /* Adjust padding as necessary */
+    padding: 16px 24px;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
-    
-  }
-  
-  .feature-card img {
-    height: 24px; /* Adjust based on the size of your icons */
+    gap: 8px;
+}
+
+.feature-card img {
+    height: 24px;
     width: auto;
-  }
-  
-  .feature-card span {
+}
+
+.feature-card span {
     color: #282828;
-    font-size: 24px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    color: #282828;
-    font-weight: 600; /* Semi-bold as before */
-    font-size: 14px; /* As specified for feature text */
-  }
-  
-  /* Ensure the icons have the correct path in the src attribute */
-  
-  
-  /* Ensure the smile.svg icon is the correct color, if it's not, you might need to edit the SVG file directly */
-  
-  /* Additional styles for tip section and output section */
-  
-  
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Media Queries for Smartphone Adjustments */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 36px; /* Smaller font size for smaller screens */
+        margin-top: 24px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 12px;
+    }
+
+    .input-section, .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group, .feature-card {
+        width: 100%; /* Full width for better layout on small screens */
+        max-width: 340px; /* Limit max width to ensure content is not too stretched */
+    }
+
+    .output-section {
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
